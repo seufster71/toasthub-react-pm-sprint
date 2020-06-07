@@ -177,7 +177,7 @@ class PMSprintContainer extends Component {
 				id = item.id;
 			}
 			fuLogger.log({level:'TRACE',loc:'SprintContainer::onModify',msg:"test"+id});
-			this.props.actions.modifyItem(id);
+			this.props.actions.modifyItem({id,appPrefs:this.props.appPrefs});
 		};
 	}
 	
